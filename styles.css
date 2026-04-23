@@ -665,3 +665,760 @@ img {
     height: 52px;
   }
 }
+:root{
+  --azul-principal:#4A90E2;
+  --azul-profundo:#1E5AA8;
+  --blanco:#ffffff;
+  --crema:#f8f6f2;
+  --madera:#c89b63;
+  --menta:#8FC9A3;
+  --coral:#E8877D;
+  --texto:#1f2937;
+}
+:root{
+  --azul-principal:#69A9E9;
+  --azul-secundario:#3E86D1;
+  --azul-profundo:#1F4F8E;
+  --blanco:#ffffff;
+  --crema:#f8f6f2;
+  --crema-suave:#fcfbf8;
+  --madera:#c89b63;
+  --menta:#8FC9A3;
+  --coral:#E8877D;
+  --texto:#1f2937;
+  --gris-suave:#6b7280;
+  --sombra:0 10px 28px rgba(31, 79, 142, 0.10);
+}
+
+/* base */
+body{
+  background: linear-gradient(180deg, #fdfdfd 0%, #f8f6f2 100%);
+  color: var(--texto);
+}
+
+/* header más fresco */
+.topbar{
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(105,169,233,0.18);
+  box-shadow: 0 8px 22px rgba(31,79,142,0.08);
+}
+
+.menu a{
+  color: var(--azul-profundo);
+  font-weight: 600;
+}
+
+.menu a:hover{
+  color: var(--coral);
+}
+
+/* botones */
+.gold-btn{
+  background: linear-gradient(135deg, var(--azul-principal), var(--azul-secundario));
+  color: var(--blanco);
+  box-shadow: 0 8px 20px rgba(62,134,209,0.22);
+}
+
+.gold-btn:hover{
+  background: linear-gradient(135deg, var(--azul-secundario), var(--azul-profundo));
+}
+
+.outline-btn{
+  border: 2px solid var(--coral);
+  color: var(--coral);
+  background: rgba(255,255,255,0.65);
+}
+
+.outline-btn:hover{
+  background: var(--coral);
+  color: white;
+}
+
+/* hero */
+.hero{
+  background:
+    linear-gradient(rgba(31,79,142,0.58), rgba(105,169,233,0.36)),
+    url("img/hero.jpg") center/cover no-repeat;
+}
+
+.hero-title span{
+  color: #ffd9cc;
+}
+
+.hero-brand{
+  color: #ffffff;
+}
+
+.subtitle{
+  color: #f6fbff;
+}
+
+.description{
+  color: #eef7ff;
+}
+
+/* títulos */
+.services-section h2,
+.cases-section h2,
+.blog-section h2,
+.why-us h2,
+.contact-box h2,
+.perfil-info h2,
+.tech-text h2{
+  color: var(--azul-profundo);
+}
+
+/* fondos de secciones */
+.services-section{
+  background: linear-gradient(180deg, #f7fbff 0%, #f8f6f2 100%);
+}
+
+.cases-section{
+  background: var(--crema-suave);
+}
+
+.blog-section{
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+}
+
+/* tarjetas */
+.service-card,
+.blog-card,
+.perfil-card,
+.why-card{
+  box-shadow: var(--sombra);
+  border: 1px solid rgba(105,169,233,0.10);
+}
+
+.service-card{
+  background: #ffffff;
+}
+
+.service-card:hover,
+.blog-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 16px 34px rgba(31,79,142,0.16);
+}
+
+.service-info h3,
+.blog-card h3,
+.why-card h3{
+  color: var(--azul-profundo);
+}
+
+.service-meta{
+  color: var(--gris-suave);
+}
+
+/* casos */
+.case-item{
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+  border: 1px solid rgba(105,169,233,0.12);
+}
+
+.case-item:hover{
+  box-shadow: 0 10px 24px rgba(62,134,209,0.14);
+}
+
+/* sección tecnología */
+.tech-section{
+  background: linear-gradient(135deg, var(--azul-profundo), var(--azul-secundario));
+}
+
+.tech-text .gold-btn{
+  background: var(--coral);
+}
+
+.tech-text .gold-btn:hover{
+  background: #d97368;
+}
+
+/* perfil */
+.perfil-card{
+  background: linear-gradient(180deg, #ffffff 0%, #f9fcff 100%);
+}
+
+.perfil-info h3{
+  color: var(--coral);
+}
+
+/* contacto */
+.contact-box{
+  background: linear-gradient(135deg, var(--azul-profundo), #355f9b);
+  box-shadow: 0 14px 34px rgba(31,79,142,0.18);
+}
+
+.contact-form input,
+.contact-form textarea{
+  background: rgba(255,255,255,0.96);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline: 2px solid var(--menta);
+}
+
+/* footer */
+.footer{
+  background: linear-gradient(135deg, var(--azul-profundo), #163d70);
+}
+
+.footer-col h4{
+  color: #ffd9cc;
+}
+
+/* widget whatsapp */
+.wa-box{
+  background: #edf7f1;
+}
+
+.wa-button{
+  background: linear-gradient(135deg, #25d366, #1fb95a);
+}
+
+/* detalles suaves decorativos */
+.service-card img,
+.tech-image img,
+.perfil-img img{
+  border-bottom: 4px solid rgba(232,135,125,0.18);
+}
+:root{
+  --cafe:#3b2b24;
+  --cafe-suave:#5a463c;
+  --champagne:#d6b98c;
+  --dorado:#c9a46a;
+  --beige:#f4ede4;
+  --crema:#fbf8f3;
+  --blanco:#ffffff;
+  --azul-fachada:#7db8e8;
+  --texto:#1f1f1f;
+}
+
+/* Fondo general */
+body{
+  background: linear-gradient(180deg,var(--crema),var(--beige));
+  color: var(--texto);
+}
+
+/* Header */
+.topbar{
+  background: rgba(59,43,36,0.95);
+  box-shadow: 0 10px 24px rgba(0,0,0,.10);
+}
+
+.menu a{
+  color: white;
+}
+
+.menu a:hover{
+  color: var(--champagne);
+}
+
+/* Botones */
+.gold-btn{
+  background: linear-gradient(135deg,var(--champagne),var(--dorado));
+  color: var(--cafe);
+  font-weight: 700;
+}
+
+.gold-btn:hover{
+  background: linear-gradient(135deg,var(--dorado),#b88a4e);
+  color:white;
+}
+
+.outline-btn{
+  border:2px solid var(--champagne);
+  color:var(--champagne);
+}
+
+.outline-btn:hover{
+  background:var(--champagne);
+  color:var(--cafe);
+}
+
+/* Hero */
+.hero{
+  background:
+  linear-gradient(rgba(59,43,36,.55),rgba(59,43,36,.45)),
+  url("img/hero.jpg") center/cover no-repeat;
+}
+
+.hero-title span{
+  color: var(--champagne);
+}
+
+/* Títulos */
+h2,h3,
+.services-section h2,
+.cases-section h2,
+.blog-section h2,
+.why-us h2,
+.contact-box h2,
+.perfil-info h2,
+.tech-text h2{
+  color: var(--cafe);
+}
+
+/* Tarjetas */
+.service-card,
+.blog-card,
+.why-card,
+.perfil-card{
+  background:white;
+  border:1px solid rgba(214,185,140,.25);
+  box-shadow:0 10px 28px rgba(59,43,36,.08);
+}
+
+.service-card:hover,
+.blog-card:hover{
+  transform: translateY(-8px);
+}
+
+/* Meta texto */
+.service-meta{
+  color:#7b6c60;
+}
+
+/* Sección tecnología */
+.tech-section{
+  background: linear-gradient(135deg,var(--cafe),var(--cafe-suave));
+}
+
+.tech-text .gold-btn{
+  background: var(--azul-fachada);
+  color: white;
+}
+
+/* Contacto */
+.contact-box{
+  background: linear-gradient(135deg,var(--cafe),#4a382f);
+}
+
+.contact-form input,
+.contact-form textarea{
+  background:white;
+}
+
+/* Footer */
+.footer{
+  background: #2d211c;
+}
+
+.footer-col h4{
+  color: var(--champagne);
+}
+
+/* Detalle azul fachada */
+.logo-img{
+  filter: drop-shadow(0 0 8px rgba(125,184,232,.25));
+}
+:root{
+  --azul:#7db8e8;
+  --azul-suave:#dff0ff;
+  --cafe:#4b382f;
+  --champagne:#d8b98f;
+  --beige:#f4ede4;
+  --crema:#fcfaf7;
+  --blanco:#ffffff;
+  --texto:#1f1f1f;
+}
+
+body{
+  background: linear-gradient(180deg,var(--crema),var(--beige));
+}
+
+/* Header */
+.topbar{
+  background: rgba(255,255,255,0.95);
+  border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.menu a{
+  color: var(--cafe);
+}
+
+.menu a:hover{
+  color: var(--azul);
+}
+
+/* Botones */
+.gold-btn{
+  background: linear-gradient(135deg,var(--champagne),#e8d0aa);
+  color: var(--cafe);
+}
+
+.gold-btn:hover{
+  background: linear-gradient(135deg,var(--azul),#9fd0f5);
+  color:white;
+}
+
+/* Hero */
+.hero{
+  background:
+  linear-gradient(rgba(255,255,255,.20),rgba(75,56,47,.28)),
+  url("img/hero.jpg") center/cover no-repeat;
+}
+
+.hero-title,
+.hero-brand{
+  color:white;
+}
+
+.hero-title span{
+  color:#ffe8c8;
+}
+
+/* títulos */
+h2,h3{
+  color:var(--cafe);
+}
+
+/* tarjetas */
+.service-card,
+.blog-card,
+.why-card,
+.perfil-card{
+  background:white;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+/* tecnología */
+.tech-section{
+  background: linear-gradient(135deg,var(--azul),#5aa3de);
+}
+
+/* contacto */
+.contact-box{
+  background: linear-gradient(135deg,var(--cafe),#5a463c);
+}
+
+/* footer */
+.footer{
+  background: #2f2f2f;
+}
+
+.footer-col h4{
+  color: var(--champagne);
+}
+/* AJUSTE FINO - versión equilibrada */
+body{
+  background: #faf7f2;
+}
+
+/* header limpio pero con más fuerza */
+.topbar{
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+.menu a{
+  color: #4b382f;
+  font-weight: 600;
+}
+
+.menu a:hover{
+  color: #7db8e8;
+}
+
+/* hero con más contraste */
+.hero{
+  background:
+    linear-gradient(rgba(59,43,36,.38), rgba(59,43,36,.30)),
+    url("img/hero.jpg") center/cover no-repeat;
+  min-height: 88vh;
+}
+
+.hero-title{
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.18);
+}
+
+.hero-title span{
+  color: #f1d2a8;
+}
+
+.hero-brand,
+.subtitle,
+.description{
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0,0,0,.12);
+}
+
+/* botones más bonitos */
+.gold-btn{
+  background: linear-gradient(135deg,#d8b98f,#e7cfad);
+  color: #4b382f;
+  border: none;
+}
+
+.gold-btn:hover{
+  background: linear-gradient(135deg,#caa06b,#d8b98f);
+  color: white;
+}
+
+.outline-btn{
+  border: 2px solid #d8b98f;
+  color: #fff;
+  background: rgba(255,255,255,.10);
+}
+
+.outline-btn:hover{
+  background: #d8b98f;
+  color: #4b382f;
+}
+
+/* secciones */
+.services-section{
+  background: #f8f4ee;
+}
+
+.cases-section{
+  background: #ffffff;
+}
+
+.blog-section{
+  background: #fcfaf7;
+}
+
+/* tarjetas */
+.service-card,
+.blog-card,
+.why-card,
+.perfil-card{
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(0,0,0,.07);
+  border: 1px solid rgba(216,185,143,.18);
+}
+
+/* contacto */
+.contact-box{
+  background: linear-gradient(135deg,#4b382f,#5c463a);
+}
+
+/* footer */
+.footer{
+  background: #2f241f;
+}
+
+/* widget whatsapp más limpio */
+.wa-box{
+  background: #eef3ef;
+}
+/* ===== RESETEO VISUAL FINAL ÓPTICA ===== */
+
+body{
+  background: #fcfaf7;
+  color: #2b2b2b;
+}
+
+/* header */
+.topbar{
+  background: rgba(255,255,255,0.98);
+  border-bottom: 1px solid rgba(125,184,232,0.20);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.05);
+}
+
+.menu a{
+  color: #3f4a5a;
+  font-weight: 600;
+}
+
+.menu a:hover{
+  color: #7db8e8;
+}
+
+/* botones */
+.gold-btn{
+  background: linear-gradient(135deg,#dcc29c,#ecd9bb);
+  color: #4b382f;
+  border: none;
+  box-shadow: 0 8px 20px rgba(220,194,156,0.30);
+}
+
+.gold-btn:hover{
+  background: linear-gradient(135deg,#d2b184,#e3c79e);
+  color: #3b2b24;
+}
+
+.outline-btn{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+}
+
+.outline-btn:hover{
+  background: #ffffff;
+  color: #6a8fb3;
+}
+
+/* hero */
+.hero{
+  min-height: 88vh;
+  background:
+    linear-gradient(rgba(106,143,179,0.28), rgba(60,70,85,0.28)),
+    url("img/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title{
+  color: #ffffff;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.16);
+}
+
+.hero-title span{
+  color: #f3dfbf;
+}
+
+.hero-brand,
+.subtitle,
+.description{
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+/* secciones */
+.services-section{
+  background: #f8fbff;
+}
+
+.cases-section{
+  background: #ffffff;
+}
+
+.blog-section{
+  background: #fcfaf7;
+}
+
+/* títulos */
+.services-section h2,
+.cases-section h2,
+.blog-section h2,
+.why-us h2,
+.contact-box h2,
+.perfil-info h2,
+.tech-text h2{
+  color: #4b382f;
+}
+
+/* tarjetas */
+.service-card,
+.blog-card,
+.why-card,
+.perfil-card{
+  background: #ffffff;
+  border: 1px solid rgba(125,184,232,0.12);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.06);
+}
+
+.service-card:hover,
+.blog-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.10);
+}
+
+.service-info h3,
+.blog-card h3,
+.why-card h3{
+  color: #4b382f;
+}
+
+.service-meta{
+  color: #7a7a7a;
+}
+
+/* casos */
+.case-item{
+  background: linear-gradient(180deg,#ffffff,#f7fbff);
+  border: 1px solid rgba(125,184,232,0.10);
+}
+
+/* sección tecnología */
+.tech-section{
+  background: linear-gradient(135deg,#6fa7d8,#5e90c2);
+  color: white;
+}
+
+.tech-text h2{
+  color: white;
+}
+
+.tech-text .gold-btn{
+  background: #f1dcc0;
+  color: #4b382f;
+}
+
+/* perfil */
+.perfil-card{
+  background: linear-gradient(180deg,#ffffff,#fbfdff);
+}
+
+.perfil-info h3{
+  color: #b89262;
+}
+
+/* contacto */
+.contact-box{
+  background: linear-gradient(135deg,#6d8fb1,#526f92);
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea{
+  background: rgba(255,255,255,0.98);
+}
+
+/* footer */
+.footer{
+  background: #4f79a5;
+  color: white;
+}
+
+.footer-col h4{
+  color: #f3dfbf;
+}
+
+/* whatsapp */
+.wa-box{
+  background: #eef4ef;
+}
+/* TEXTO HERO MÁS FUERTE Y ELEGANTE */
+
+.hero-title{
+  color: #2f3e4f;   /* azul gris elegante */
+  text-shadow: none;
+}
+
+.hero-title span{
+  color: #cfae7a;   /* champagne */
+}
+
+.hero-brand{
+  color: #3f4a5a;
+  text-shadow: none;
+}
+
+.subtitle{
+  color: #4b5563;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.description{
+  color: #5b6470;
+  line-height: 1.8;
+  text-shadow: none;
+}
+
+/* botón whatsapp visible */
+.outline-btn{
+  border: 2px solid #7b8fa6;
+  color: #3f4a5a;
+  background: rgba(255,255,255,0.55);
+}
+
+.outline-btn:hover{
+  background: #7db8e8;
+  color: white;
+}
