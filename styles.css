@@ -1472,3 +1472,126 @@ body{
   font-size: 0.98rem;
   border-radius: 10px;
 }
+/* ===== HERO PREMIUM RESPONSIVE ===== */
+
+.hero{
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 6%;
+  position: relative;
+
+  background:
+    linear-gradient(to right,
+      rgba(255,255,255,0.82) 0%,
+      rgba(255,255,255,0.65) 35%,
+      rgba(255,255,255,0.12) 65%,
+      rgba(255,255,255,0.02) 100%),
+    url("img/hero.jpg") center right/cover no-repeat;
+}
+
+.hero-content{
+  max-width: 560px;
+  z-index: 2;
+}
+
+.hero-title{
+  font-size: clamp(2.4rem,5vw,4.6rem);
+  line-height: 1.05;
+  color: #22344d;
+  margin-bottom: 14px;
+}
+
+.hero-title span{
+  color: #d4b07a;
+}
+
+.hero-brand{
+  font-size: clamp(1.8rem,3vw,3rem);
+  color: #3f4a5a;
+  margin-bottom: 10px;
+}
+
+.subtitle{
+  font-size: 1.1rem;
+  color: #4f5d6e;
+  margin-bottom: 8px;
+}
+
+.description{
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #5e6773;
+  margin-bottom: 22px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.hero-buttons a{
+  padding: 13px 24px;
+  border-radius: 10px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 992px){
+
+.hero{
+  min-height: 70vh;
+  background:
+    linear-gradient(to right,
+      rgba(255,255,255,0.88),
+      rgba(255,255,255,0.55)),
+    url("img/hero.jpg") center center/cover no-repeat;
+}
+
+.hero-content{
+  max-width: 500px;
+}
+
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px){
+
+.hero{
+  min-height: auto;
+  padding: 70px 20px;
+  text-align: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.86), rgba(255,255,255,0.86)),
+    url("img/hero.jpg") center center/cover no-repeat;
+}
+
+.hero-content{
+  max-width: 100%;
+}
+
+.hero-title{
+  font-size: 2.2rem;
+}
+
+.hero-brand{
+  font-size: 1.7rem;
+}
+
+.subtitle,
+.description{
+  font-size: 1rem;
+}
+
+.hero-buttons{
+  justify-content:center;
+}
+
+.hero-buttons a{
+  width:100%;
+  max-width:260px;
+}
+
+}
