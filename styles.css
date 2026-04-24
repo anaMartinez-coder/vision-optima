@@ -1664,7 +1664,7 @@ body{
       rgba(255,255,255,0.35) 35%,
       rgba(255,255,255,0.05) 65%,
       rgba(255,255,255,0.00) 100%),
-    url("img/hero.jpg") 78% center/cover no-repeat;
+    url("img/hero.jpg") 78% 35%/cover no-repeat;
 }
 
 .hero-content{
@@ -1716,7 +1716,7 @@ body{
 
   background:
     linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),
-    url("img/hero.jpg") center top/cover no-repeat;
+    url("img/hero.jpg") center 30%/cover no-repeat;
 }
 
 .hero-content{
@@ -1750,4 +1750,142 @@ body{
   max-width:260px;
 }
 
+}
+/* SECCIÓN MARCAS */
+.brands-section{
+  background: #ffffff;
+  padding: 70px 6% 50px;
+  text-align: center;
+}
+
+.brands-section h2{
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #24364f;
+  margin-bottom: 35px;
+  font-family: 'Playfair Display', serif;
+}
+
+.brands-grid{
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid #cfd6df;
+}
+
+.brands-grid div{
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #cfd6df;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f3e4f;
+  background: white;
+}
+
+.brands-grid div:last-child{
+  border-right: none;
+}
+
+/* PROMOS */
+.promo-section{
+  background: #ffffff;
+  padding: 40px 6% 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.promo-card{
+  min-height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+}
+
+.promo-optometria{
+  background-image: url("img/asesoria-visual.jpg");
+}
+
+.promo-monturas{
+  background-image: url("img/gafas-sol.jpg");
+}
+
+.promo-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 61, 45, .48);
+}
+
+.promo-content{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 420px;
+  padding: 25px;
+}
+
+.promo-content h2{
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.promo-content p{
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+
+.promo-btn{
+  display: inline-block;
+  background: white;
+  color: #24364f;
+  padding: 13px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .brands-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brands-grid div{
+    border-bottom: 1px solid #cfd6df;
+  }
+
+  .promo-section{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:600px){
+  .brands-section{
+    padding: 50px 18px 35px;
+  }
+
+  .brands-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .brands-grid div{
+    min-height: 90px;
+    font-size: 1.25rem;
+    border-right: none;
+  }
+
+  .promo-card{
+    min-height: 300px;
+  }
 }
