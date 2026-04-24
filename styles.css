@@ -1928,3 +1928,100 @@ body{
 .hero{
   background: url('img/hero.jpg') center 38% / cover no-repeat !important;
 }
+/* ===== SOLO AJUSTE DE LETRAS COMO LA IMAGEN ===== */
+
+/* Título principal */
+.hero-title{
+  font-size: clamp(3.2rem, 6vw, 5.4rem) !important;
+  line-height: 0.95 !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+  margin-bottom: 8px !important;
+  color: #1f3557 !important;
+}
+
+/* Parte dorada del título */
+.hero-title span{
+  display: block !important;
+  color: #d8b06a !important;
+  margin-top: 2px !important;
+}
+
+/* Nombre marca */
+.hero-brand{
+  font-size: clamp(2rem, 3vw, 3rem) !important;
+  font-weight: 700 !important;
+  color: #1f3557 !important;
+  margin: 14px 0 10px !important;
+}
+
+/* Texto descriptivo */
+.hero-description,
+.description{
+  font-size: 1.15rem !important;
+  line-height: 1.55 !important;
+  color: #32435c !important;
+  max-width: 430px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Subtítulos pequeños */
+.subtitle{
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: #32435c !important;
+  margin-bottom: 8px !important;
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px){
+
+  .hero-title{
+    font-size: 2.7rem !important;
+    line-height: 0.95 !important;
+  }
+
+  .hero-brand{
+    font-size: 1.8rem !important;
+  }
+
+  .hero-description,
+  .description{
+    font-size: 1rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .subtitle{
+    font-size: .98rem !important;
+  }
+}
+.hero-title{
+  font-size: 4.6rem !important;
+  line-height: .95 !important;
+  color: #1f3557 !important;
+  max-width: 430px !important;
+}
+
+.hero-title span{
+  color: #d8b06a !important;
+}
+
+.hero-brand{
+  font-size: 2.3rem !important;
+  color: #1f3557 !important;
+  margin-top: 18px !important;
+}
+
+.subtitle{
+  max-width: 420px !important;
+  font-size: 1.2rem !important;
+  line-height: 1.5 !important;
+  color: #1f3557 !important;
+}
+
+@media(max-width:768px){
+  .hero-title{
+    font-size: 2.8rem !important;
+    max-width: 100% !important;
+  }
+}
