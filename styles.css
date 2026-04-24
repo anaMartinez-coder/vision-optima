@@ -2065,7 +2065,233 @@ body{
 /* MOVER TEXTO HERO A LA IZQUIERDA */
 .hero-content{
   padding-left: 0 !important;
-  margin-left: 10px !important;
+  margin-left: 12px !important;
   margin-top: 120px !important;
   max-width: 520px !important;
+}
+/* TEXTO HERO MÁS LEGIBLE SIN ACLARAR IMAGEN */
+
+.hero h1{
+  color: #ffffff !important;   /* blanco elegante */
+  text-shadow: 0 3px 10px rgba(0,0,0,0.35);
+}
+
+.hero h1 span,
+.hero .highlight{
+  color: #e7c98b !important;   /* dorado suave */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.hero h2{
+  color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.30);
+}
+
+.hero p{
+  color: rgba(255,255,255,0.95) !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.30);
+}
+
+.hero-content{
+  max-width: 520px;
+}
+/* NUEVOS COLORES HERO */
+
+.hero h1{
+  color: #f8f8f8 !important; /* blanco suave */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.hero h1 span{
+  color: #d9b36a !important; /* dorado */
+}
+
+.hero h2{
+  color: #9fc4ff !important; /* azul claro premium */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.30);
+}
+
+.hero p{
+  color: #ffffff !important;
+  opacity: 0.95;
+}
+/* AJUSTE TEXTO SECUNDARIO */
+.hero p{
+  color: #1f2f46 !important;   /* azul gris oscuro */
+  text-shadow: 0 1px 3px rgba(255,255,255,0.20);
+  font-weight: 600;
+}
+
+.hero .description,
+.hero .subtitle{
+  color: #23344d !important;
+}
+/* RESTAURAR HERO BONITO */
+.hero-title-final{
+  display: block !important;
+  font-size: clamp(3.3rem, 6vw, 5.6rem) !important;
+  line-height: .92 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  max-width: 470px !important;
+  margin-bottom: 18px !important;
+  text-shadow: 0 3px 10px rgba(0,0,0,.35) !important;
+}
+
+.hero-title-final span{
+  display: block !important;
+  color: #d8b06a !important;
+  text-shadow: 0 3px 8px rgba(0,0,0,.25) !important;
+}
+
+.hero-brand{
+  color: #9fc4ff !important;
+  font-size: 2.6rem !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,.35) !important;
+}
+
+.subtitle{
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  max-width: 520px !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,.45) !important;
+}
+.hero-title,
+.hero-title-final{
+  display: none !important;
+}
+
+.hero-brand{
+  color: #9fc4ff !important;
+  font-size: 3.4rem !important;
+  line-height: .95 !important;
+  text-shadow: 0 3px 8px rgba(0,0,0,.35) !important;
+}
+
+.subtitle{
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  line-height: 1.35 !important;
+  max-width: 520px !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,.45) !important;
+}
+/* HEADER TIPO TIENDA ÓPTICA */
+.promo-bar{
+  background:#8fb8d8;
+  color:white;
+  display:flex;
+  justify-content:center;
+  gap:80px;
+  padding:12px 20px;
+  font-size:.95rem;
+  font-weight:700;
+}
+
+.store-header{
+  background:#eef2f5 !important;
+  padding:18px 6% !important;
+  display:grid !important;
+  grid-template-columns: 220px 1fr auto;
+  gap:28px;
+  align-items:center;
+}
+
+.logo-img{
+  height:58px !important;
+  width:auto;
+  object-fit:contain;
+}
+
+.search-box{
+  display:flex;
+  width:100%;
+}
+
+.search-box input{
+  width:100%;
+  padding:13px 16px;
+  border:1px solid #cbd5df;
+  border-radius:4px 0 0 4px;
+  font-size:1rem;
+}
+
+.search-box button{
+  width:55px;
+  border:none;
+  background:#445568;
+  color:white;
+  border-radius:0 4px 4px 0;
+  cursor:pointer;
+}
+
+.mini-whatsapp{
+  background:white;
+  color:#1f2937;
+  padding:12px 18px;
+  border-radius:4px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.category-menu{
+  background:#8fb8d8;
+  display:flex;
+  justify-content:center;
+  gap:52px;
+  padding:16px 20px;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.category-menu a{
+  color:white;
+  text-decoration:none;
+  font-weight:800;
+  text-transform:uppercase;
+  font-size:.9rem;
+}
+
+.category-menu a:hover{
+  color:#efd7ad;
+}
+
+/* móvil */
+@media(max-width:768px){
+  .promo-bar{
+    flex-direction:column;
+    gap:6px;
+    text-align:center;
+    font-size:.82rem;
+  }
+
+  .store-header{
+    grid-template-columns:1fr !important;
+    text-align:center;
+    gap:14px;
+  }
+
+  .brand{
+    justify-content:center;
+  }
+
+  .search-box{
+    max-width:100%;
+  }
+
+  .mini-whatsapp{
+    display:inline-block;
+  }
+
+  .category-menu{
+    overflow-x:auto;
+    justify-content:flex-start;
+    gap:26px;
+    padding:14px 16px;
+  }
+
+  .category-menu a{
+    white-space:nowrap;
+  }
 }
