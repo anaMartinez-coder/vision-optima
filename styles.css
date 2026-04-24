@@ -1889,3 +1889,32 @@ body{
     min-height: 300px;
   }
 }
+/* DESTELLOS PREMIUM */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    radial-gradient(circle, rgba(255,225,170,.9) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,.8) 0 1px, transparent 2px);
+  background-size: 180px 180px, 120px 120px;
+  animation: sparkleMove 18s linear infinite;
+  opacity:.55;
+}
+
+@keyframes sparkleMove{
+  from{ background-position:0 0, 0 0; }
+  to{ background-position:220px 260px, -160px 180px; }
+}
+
+.gold-btn::after{
+  content:" ✦";
+  margin-left:8px;
+}
+@media(max-width:768px){
+  .hero::after{
+    opacity:.25;
+    background-size:220px 220px, 160px 160px;
+  }
+}
