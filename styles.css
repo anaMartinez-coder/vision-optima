@@ -1595,3 +1595,57 @@ body{
 }
 
 }
+/* Ajuste imagen hero para mostrar mejor rostro y gafas */
+.hero{
+  background:
+    linear-gradient(to right,
+      rgba(255,255,255,0.88) 0%,
+      rgba(255,255,255,0.62) 38%,
+      rgba(255,255,255,0.12) 70%,
+      rgba(255,255,255,0.02) 100%),
+    url("img/hero.jpg") 72% center/cover no-repeat;
+}
+
+@media (max-width: 992px){
+  .hero{
+    background:
+      linear-gradient(rgba(255,255,255,0.86), rgba(255,255,255,0.86)),
+      url("img/hero.jpg") 68% center/cover no-repeat;
+  }
+}
+
+@media (max-width: 768px){
+  .hero{
+    background:
+      linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
+      url("img/hero.jpg") center top/cover no-repeat;
+  }
+}
+/* HERO con imagen más viva */
+.hero{
+  background:
+    linear-gradient(to right,
+      rgba(255,255,255,0.68) 0%,
+      rgba(255,255,255,0.42) 35%,
+      rgba(255,255,255,0.12) 65%,
+      rgba(255,255,255,0.00) 100%),
+    url("img/hero.jpg") 72% center/cover no-repeat;
+}
+
+@media (max-width: 992px){
+  .hero{
+    background:
+      linear-gradient(to right,
+        rgba(255,255,255,0.58),
+        rgba(255,255,255,0.22)),
+      url("img/hero.jpg") 68% center/cover no-repeat;
+  }
+}
+
+@media (max-width: 768px){
+  .hero{
+    background:
+      linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)),
+      url("img/hero.jpg") center top/cover no-repeat;
+  }
+}
