@@ -738,7 +738,7 @@ body{
 /* hero */
 .hero{
   background:
-    linear-gradient(rgba(31,79,142,0.58), rgba(105,169,233,0.36)),
+    linear-gradient(rgba(106,143,179,0.25), rgba(60,70,85,0.25)),
     url("img/hero.jpg") center/cover no-repeat;
 }
 
@@ -1421,4 +1421,9 @@ body{
 .outline-btn:hover{
   background: #7db8e8;
   color: white;
+}
+.hero{
+  background:
+    linear-gradient(rgba(106,143,179,0.25), rgba(60,70,85,0.25)),
+    url("img/hero.jpg") center/cover no-repeat;
 }
